@@ -1,0 +1,3 @@
+
+A="sjadijsa"
+print("{A}")

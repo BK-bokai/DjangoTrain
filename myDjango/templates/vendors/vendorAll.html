@@ -1,0 +1,15 @@
+{% extends "./layouts/master.html" %}
+{% block title %} My store {% endblock %}
+
+{% block content%}
+<div>hello world</div>
+{% for vlist in vendorList %}
+<h1>店家:{{vlist.store_name}}</h1>
+<ul>
+    <li>電話:{{vlist.phone_number}}</li>
+    <li>住址:{{vlist.address}}</li>
+</ul>
+<!-- <p> <a href="/vendor/{{vlist.id}}"> More detail...</a> </p> -->
+<p> <a href="{{vlist.get_absolute_url}}"> More detail...</a> </p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "./layouts/master.html" %}
+{% block title %} My store {% endblock %}
+
+{% block content%}
+<div>hello world</div>
+
+<h1>店家:{{vendorList.store_name}}</h1>
+<ul>
+    <li>電話:{{vendorList.phone_number}}</li>
+    <li>住址:{{vendorList.address}}</li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% block title %} Myform {% endblock %}
+{% block context %}
+<h2>Vendor Create</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="save" />
+</form>
+{% endblock %}
